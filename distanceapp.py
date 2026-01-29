@@ -258,3 +258,18 @@ if 'results' in st.session_state:
         for i, stop in enumerate(stop_order):
             st.markdown(f"**{i+2}. STOP:** {stop}")
         st.markdown(f"**{len(stop_order)+2}. FINISH:** Return to Start")
+
+st.caption("Note: This tool is a student prototype for educational use. Do not use for real-time navigation.")
+
+# ... (put this at the end of your script)
+
+# REQUIRED: Attribution Footer (Credits OpenRouteService & OpenStreetMap)
+st.markdown(
+    """
+    <div style='position: fixed; bottom: 10px; width: 100%; text-align: center; color: #888888; font-size: 12px;'>
+        Routing service provided by <a href="https://openrouteservice.org" target="_blank" style="color: #888888;">OpenRouteService</a> 
+        | Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" style="color: #888888;">OpenStreetMap</a> contributors
+    </div>
+    """,
+    unsafe_allow_html=True
+)
