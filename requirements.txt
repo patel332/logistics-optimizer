@@ -4,3 +4,4 @@ googlemaps
 networkx
 openrouteservice
 folium
+st_folium
