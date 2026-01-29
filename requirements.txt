@@ -3,3 +3,4 @@ pandas
 googlemaps
 networkx
 openrouteservice
+folium
